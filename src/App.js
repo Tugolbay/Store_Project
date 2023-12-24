@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { StoreAdress } from "./component/main/storeAdress/StoreAdress";
+import { HeaderCart } from "./component/main/headerCart/HeaderCart";
+import { NewsPage } from "./component/main/news/NewsPage";
+import Header from "./component/header/Header";
+import { DiscountProduct } from "./component/main/discountProduct/DiscountProduct";
+import { Сategories } from "./component/main/categories/Сategories";
+import { SaleCart } from "./component/main/saleCart/SaleCart";
+import { Footer } from "./component/footer/Footer";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <HeaderCart />
+      <Сategories />
+      <SaleCart />
+      <NewsPage />
+      <DiscountProduct />
+      <StoreAdress />
+      <Footer />
     </div>
   );
 }
